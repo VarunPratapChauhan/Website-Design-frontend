@@ -6,6 +6,7 @@ import hp11 from "../assets/hp11.png";
 import hp22 from "../assets/hp22.png";
 import arrow_next_right from "../assets/arrow_next_right.png";
 import hiring_blog_bg from "../assets/hiring_blog_bg.png";
+import React from "react";
 
 export default function HiringProcess() {
   const steps = [
@@ -37,15 +38,15 @@ export default function HiringProcess() {
       className="py-16 px-6 bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${hiring_blog_bg})` }}
     >
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-6xl font-bold mb-6">Our Hiring Process</h2>
-        <p className="text-gray-600 mb-2">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Our Hiring Process</h2>
+        <p className="text-gray-600 mb-12 text-base sm:text-lg">
           Take a look at our simple and straightforward process to hire software
           developers from ValueCoders.
         </p>
         <div className="flex gap-6 items-center">
           {steps.map((step, index) => (
-            <>
+            <React.Fragment key={index}>
               <div className="w-full sm:w-[calc(50%-12px)] md:w-[calc(25%-12px)] rounded">
                 <div className="overflow-hidden mb-4 relative flex justify-center">
                   {!step.no && (
@@ -83,7 +84,7 @@ export default function HiringProcess() {
                   />
                 </div>
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>

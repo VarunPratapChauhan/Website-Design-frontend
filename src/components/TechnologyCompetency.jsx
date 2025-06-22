@@ -5,7 +5,6 @@ import websettings4 from "../assets/websettings4.png";
 import websettings5 from "../assets/websettings5.png";
 import websettings6 from "../assets/websettings6.png";
 import lines3 from "../assets/lines3.png";
-import video from "../assets/video.png";
 import shade1 from "../assets/shade1.png";
 
 export default function TechnologyCompetency() {
@@ -145,7 +144,8 @@ export default function TechnologyCompetency() {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-pink-50 to-green-50 py-1 px-6">
+    <section className="relative bg-gradient-to-br from-pink-50 to-green-50 py-20 px-4 sm:px-6">
+     
       <div className="relative w-full h-auto mb-20">
 
 

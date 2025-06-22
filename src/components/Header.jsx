@@ -3,7 +3,7 @@ import logo from '/website_icon.png';
 
 export default function Header() {
   return (
-    <header className="bg-white shadow px-4 py-3 md:px-6 flex flex-wrap items-center justify-between gap-y-3">
+    <header className="bg-white px-4 py-3 md:px-6 flex flex-wrap items-center justify-between gap-y-3">
       <div className="font-bold flex text-lg gap-x-2"><img src={logo} alt="Logo" className="w-8 h-8" />Logoipsum</div>
 
       <nav className="flex flex-wrap gap-x-4 text-sm md:gap-x-6 md:text-base leading-relaxed">

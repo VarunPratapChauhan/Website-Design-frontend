@@ -16,20 +16,20 @@ export default function WhyIndiaSection() {
           className="w-200 h-200 absolute bg-no-repeat bg-contain"
           style={{ backgroundImage: `url(${people_icon})` }}
         ></div>
-        <h2 className="mr-150 text-6xl ml-30 font-bold mb-6">
+        <h2 className="text-3xl w-5/7 sm:text-4xl md:text-5xl lg:text-6xl mr-150 text-6xl ml-30 font-bold mb-6">
           Why Hire Software Developers In India?
         </h2>
-        <div className="flex justify-end pr-30 ml-200">
-          <ul className="w-full max-w-3xl space-y-6">
+        <div className="flex justify-center md:justify-end">
+          <ul className="w-full mt-15 md:w-2/4 space-y-6 mr-6">
             {reasons.map((r, i) => (
               <li key={i}>
-                <div className="flex items-center">
-                  <span className="text-3xl leading-relaxed tracking-wide w-full">
+                <div className="flex items-center justify-between">
+                  <span className="text-lg sm:text-xl md:text-2xl tracking-wide">
                     {r}
                   </span>
-                  <MdArrowOutward className="text-2xl ml-5" />
+                  <MdArrowOutward className="text-xl md:text-2xl ml-4" />
                 </div>
-                <hr className="mt-2 border-t-2 border-gray-300 ml-auto" />
+                <hr className="mt-2 border-t border-gray-300 opacity-30" />
               </li>
             ))}
           </ul>

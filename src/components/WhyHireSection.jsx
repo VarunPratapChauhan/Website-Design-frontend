@@ -9,7 +9,7 @@ import hire_dev_bg from "../assets/hire_dev_bg.png";
 export default function WhyHireSection() {
   return (
     <section className="bg-gray-50">
-      <div className="relative w-full h-[1100px]">
+      <div className="relative w-full">
         <div
           className="mt-5 h-180 absolute inset-0 bg-no-repeat bg-contain"
           style={{ backgroundImage: `url(${lines})` }}
@@ -111,7 +111,7 @@ export default function WhyHireSection() {
             </div>
           </div>
 
-          <div className="flex items-start gap-30">
+          <div className="relative flex flex-col sm:flex-row  items-start gap-6">
             <img
               src={studyImage2}
               alt="sitting study image"
@@ -121,7 +121,7 @@ export default function WhyHireSection() {
             <img
               src={lines2}
               alt="sitting study image"
-              className="mt-1  object-contain"
+              className="absolute right-10 mt-1 object-contain"
             />
           </div>
         </div>
